@@ -624,6 +624,7 @@
         };
 
         $scope.setNewYear = function setNewYear(year) {
+          year = year || new Date().getFullYear();
 
           //deactivate selected day
           if (!isMobile) {
